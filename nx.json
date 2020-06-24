@@ -18,5 +18,13 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "code-challenge-app": {
+      "tags": []
+    },
+    "code-challenge-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["code-challenge-app"]
+    }
+  }
 }
