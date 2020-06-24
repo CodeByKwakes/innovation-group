@@ -2,19 +2,22 @@
   {
     "id": 1,
     "label": "orange",
-    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "price": 0.51
+    "src": "assets/orange.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "price": 0.50
   },
   {
-    "id":2,
+    "id": 2,
     "label": "apple",
-    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "src": "assets/apple.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "price": 0.75
   },
   {
-    "id":3,
+    "id": 3,
     "label": "banana",
-    "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "src": "assets/banana.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     "price": 1.05
   }
 ]

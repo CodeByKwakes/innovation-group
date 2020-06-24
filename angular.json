@@ -138,15 +138,6 @@
       "sourceRoot": "libs/code-challenge/feature/product/src",
       "prefix": "innovation-group",
       "architect": {
-        "build":{
-          "options": {
-            "assets": [ {
-                "input": "libs/code-challenge/shared/common/src/lib/assets",
-                "glob": "**.*",
-                "output": "/assets/"
-              }]
-          }
-        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -202,6 +193,41 @@
             "tsConfig": "libs/code-challenge/shared/common/tsconfig.spec.json",
             "passWithNoTests": true
           }
+        }
+      }
+    },
+    "code-challenge-ui-product-card": {
+      "projectType": "library",
+      "root": "libs/code-challenge/ui/product-card",
+      "sourceRoot": "libs/code-challenge/ui/product-card/src",
+      "prefix": "innovation-group",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/code-challenge/ui/product-card/tsconfig.lib.json",
+              "libs/code-challenge/ui/product-card/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/code-challenge/ui/product-card/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/code-challenge/ui/product-card/jest.config.js",
+            "tsConfig": "libs/code-challenge/ui/product-card/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/code-challenge/ui/product-card/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
         }
       }
     }

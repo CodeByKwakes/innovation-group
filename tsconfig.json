@@ -21,6 +21,9 @@
       ],
       "@innovation-group/code-challenge/shared/common": [
         "libs/code-challenge/shared/common/src/index.ts"
+      ],
+      "@innovation-group/code-challenge/ui/product-card": [
+        "libs/code-challenge/ui/product-card/src/index.ts"
       ]
     }
   },

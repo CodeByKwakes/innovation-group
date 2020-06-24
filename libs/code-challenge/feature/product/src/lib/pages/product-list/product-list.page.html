@@ -1,16 +1,7 @@
 <section class="container">
   <div class="grid-row">
     <article class="grid-item">
-      <img src="assets/apple.jpg"
-           alt="">
-    </article>
-    <article class="grid-item">
-      <img src="assets/banana.jpg"
-           alt="">
-    </article>
-    <article class="grid-item">
-      <img src="assets/orange.jpg"
-           alt="">
+    <innovation-group-product-card [product]="test" (priceChange)="onAddToBasket($event)"></innovation-group-product-card>
     </article>
   </div>
 </section>

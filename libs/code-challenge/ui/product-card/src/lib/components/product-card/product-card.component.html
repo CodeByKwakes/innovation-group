@@ -1,0 +1,18 @@
+<div class="card">
+  <img [src]="product.src"
+       [alt]="product.label">
+
+  <article class="content">
+    <h3>{{product.label | titlecase}}</h3>
+    <p>{{product.description}}</p>
+    <p class="price">{{product.price | currency: 'GBP'}}</p>
+    <div class="flex">
+      <button (click)="priceChange.emit(product.price)">
+        <img src="assets/shopping-basket.svg"
+             alt="shopping basket">
+      </button>
+    </div>
+
+  </article>
+
+</div>
