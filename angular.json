@@ -23,7 +23,12 @@
             "aot": true,
             "assets": [
               "apps/code-challenge-app/src/favicon.ico",
-              "apps/code-challenge-app/src/assets"
+              "apps/code-challenge-app/src/assets",
+              {
+                "input": "libs/code-challenge/shared/common/src/lib/assets",
+                "glob": "**.*",
+                "output": "/assets/"
+              }
             ],
             "styles": ["apps/code-challenge-app/src/styles.scss"],
             "scripts": []
@@ -133,6 +138,15 @@
       "sourceRoot": "libs/code-challenge/feature/product/src",
       "prefix": "innovation-group",
       "architect": {
+        "build":{
+          "options": {
+            "assets": [ {
+                "input": "libs/code-challenge/shared/common/src/lib/assets",
+                "glob": "**.*",
+                "output": "/assets/"
+              }]
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -159,6 +173,35 @@
       "schematics": {
         "@nrwl/angular:component": {
           "style": "scss"
+        }
+      }
+    },
+    "code-challenge-shared-common": {
+      "root": "libs/code-challenge/shared/common",
+      "sourceRoot": "libs/code-challenge/shared/common/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/code-challenge/shared/common/tsconfig.lib.json",
+              "libs/code-challenge/shared/common/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/code-challenge/shared/common/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/code-challenge/shared/common/jest.config.js",
+            "tsConfig": "libs/code-challenge/shared/common/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
         }
       }
     }

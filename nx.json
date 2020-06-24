@@ -28,6 +28,9 @@
     },
     "code-challenge-feature-product": {
       "tags": []
+    },
+    "code-challenge-shared-common": {
+      "tags": []
     }
   }
 }

@@ -18,6 +18,9 @@
     "paths": {
       "@innovation-group/code-challenge/feature/product": [
         "libs/code-challenge/feature/product/src/index.ts"
+      ],
+      "@innovation-group/code-challenge/shared/common": [
+        "libs/code-challenge/shared/common/src/index.ts"
       ]
     }
   },
