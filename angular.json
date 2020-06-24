@@ -230,6 +230,41 @@
           "style": "scss"
         }
       }
+    },
+    "code-challenge-data-access": {
+      "projectType": "library",
+      "root": "libs/code-challenge/data-access",
+      "sourceRoot": "libs/code-challenge/data-access/src",
+      "prefix": "innovation-group",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/code-challenge/data-access/tsconfig.lib.json",
+              "libs/code-challenge/data-access/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/code-challenge/data-access/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/code-challenge/data-access/jest.config.js",
+            "tsConfig": "libs/code-challenge/data-access/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/code-challenge/data-access/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

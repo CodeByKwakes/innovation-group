@@ -34,6 +34,9 @@
     },
     "code-challenge-ui-product-card": {
       "tags": []
+    },
+    "code-challenge-data-access": {
+      "tags": []
     }
   }
 }
