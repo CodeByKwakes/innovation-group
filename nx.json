@@ -25,6 +25,9 @@
     "code-challenge-app-e2e": {
       "tags": [],
       "implicitDependencies": ["code-challenge-app"]
+    },
+    "code-challenge-feature-product": {
+      "tags": []
     }
   }
 }

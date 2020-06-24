@@ -15,7 +15,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@innovation-group/code-challenge/feature/product": [
+        "libs/code-challenge/feature/product/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

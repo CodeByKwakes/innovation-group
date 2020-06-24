@@ -126,6 +126,41 @@
           }
         }
       }
+    },
+    "code-challenge-feature-product": {
+      "projectType": "library",
+      "root": "libs/code-challenge/feature/product",
+      "sourceRoot": "libs/code-challenge/feature/product/src",
+      "prefix": "innovation-group",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/code-challenge/feature/product/tsconfig.lib.json",
+              "libs/code-challenge/feature/product/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/code-challenge/feature/product/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/code-challenge/feature/product/jest.config.js",
+            "tsConfig": "libs/code-challenge/feature/product/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/code-challenge/feature/product/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
