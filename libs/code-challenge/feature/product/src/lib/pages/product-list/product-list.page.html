@@ -1,7 +1,12 @@
 <section class="container">
   <div class="grid-row">
-    <article class="grid-item">
-    <innovation-group-product-card [product]="test" (priceChange)="onAddToBasket($event)"></innovation-group-product-card>
+    <article *ngFor="let product of products$ | async"
+             class="grid-item">
+      <innovation-group-product-card [product]="product"
+                                     (priceChange)="onAddToBasket($event)">
+      </innovation-group-product-card>
     </article>
   </div>
+
+  <!-- <p>{{basketTotal$ | async | currency:'GBP'}}</p> -->
 </section>

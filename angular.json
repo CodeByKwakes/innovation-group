@@ -28,6 +28,11 @@
                 "input": "libs/code-challenge/shared/common/src/lib/assets",
                 "glob": "**.*",
                 "output": "/assets/"
+              },
+              {
+                "input": "libs/code-challenge/shared/common/src/lib/json",
+                "glob": "**.*",
+                "output": "/json/"
               }
             ],
             "styles": ["apps/code-challenge-app/src/styles.scss"],
