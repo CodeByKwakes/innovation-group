@@ -27,6 +27,9 @@
       ],
       "@innovation-group/code-challenge/data-access": [
         "libs/code-challenge/data-access/src/index.ts"
+      ],
+      "@innovation-group/code-challenge/shared/header": [
+        "libs/code-challenge/shared/header/src/index.ts"
       ]
     }
   },

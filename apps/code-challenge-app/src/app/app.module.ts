@@ -4,12 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-
+import { HeaderModule } from '@innovation-group/code-challenge/shared/header';
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
+    HeaderModule,
     RouterModule.forRoot(
       [
         {
