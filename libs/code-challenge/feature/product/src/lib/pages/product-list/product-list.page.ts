@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '@innovation-group/code-challenge/data-access';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'innovation-group-product-list',
@@ -8,16 +9,22 @@ import { ApiService } from '@innovation-group/code-challenge/data-access';
 })
 export class ProductListPage implements OnInit {
   products$ = this._productSrv.getProducts();
+
   basketTotal$ = this._productSrv.basketAction$;
 
-  private _basketTotal = 0;
-
-  constructor(private _productSrv: ApiService) {}
+  constructor(private _productSrv: ApiService, private _router: Router) {}
 
   ngOnInit(): void {}
 
   onAddToBasket(price: number) {
-    this._basketTotal = this._basketTotal += +price;
-    this._productSrv.addTotalBasketValue(+this._basketTotal.toFixed(2));
+    this._productSrv.addTotalBasketValue(price);
+  }
+
+  sortByKey(key: string) {
+    this.products$ = this._productSrv.getProducts(key);
+  }
+
+  onSelectedProduct(id: number) {
+    this._router.navigate(['/products', id]);
   }
 }

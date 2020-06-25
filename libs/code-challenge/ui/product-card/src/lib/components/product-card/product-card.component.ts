@@ -15,4 +15,5 @@ import {
 export class ProductCardComponent {
   @Input() product: any;
   @Output() priceChange: EventEmitter<number> = new EventEmitter<number>();
+  @Output() productSelected: EventEmitter<number> = new EventEmitter<number>();
 }

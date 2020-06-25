@@ -1,13 +1,16 @@
 <div class="card">
   <img [src]="product.src"
-       [alt]="product.label">
+       [alt]="product.label"
+       (click)="productSelected.emit(product.id)">
 
   <article class="content">
-    <h3>{{product.label | titlecase}}</h3>
+    <h3 (click)="productSelected.emit(product.id)">{{product.label | titlecase}}
+    </h3>
     <p>{{product.description}}</p>
     <p class="price">{{product.price | currency: 'GBP'}}</p>
     <div class="flex">
-      <button (click)="priceChange.emit(product.price)">
+      <button class="cart margin-l-auto"
+              (click)="priceChange.emit(product.price)">
         <img src="assets/shopping-basket.svg"
              alt="shopping basket">
       </button>

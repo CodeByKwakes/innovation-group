@@ -35,6 +35,10 @@
   position: relative;
   padding: 10px;
   box-sizing: border-box;
+
+  &__auto {
+    flex: 1 0 0;
+  }
 }
 
 @media (max-width: 1333px) {
@@ -60,4 +64,18 @@
 
 img {
   width: 100%;
+}
+
+.pad-gap {
+  padding: 16px;
+}
+
+.cart {
+  width: 64px;
+  border: none;
+  background-color: transparent;
+}
+
+.margin-l-auto {
+  margin-left: auto;
 }

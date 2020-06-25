@@ -1,0 +1,32 @@
+<ng-template let-product
+             [ngIf]="product$ | async">
+  <a (click)="onRouteToProductList()">
+    < back
+      to
+      fruit
+      </a>
+      <section class="grid-row">
+
+        <article class="grid-item__auto pad-gap">
+          <img [src]="product.src"
+               alt="">
+        </article>
+
+        <article class="grid-item__auto">
+          <h3>{{product.label}}</h3>
+          <p>{{product.price | currency:'GBP'}}</p>
+
+          <div class="flex" (click)="onAddToBasket(product.price)">
+            <button class="cart">
+              <img src="assets/shopping-basket.svg"
+                   alt="shopping basket">
+            </button>
+            <p>Buy now</p>
+          </div>
+
+          <p>{{product.description}}</p>
+        </article>
+
+        <!-- <pre><code>{{product$ | async | json}}</code></pre> -->
+      </section>
+</ng-template>

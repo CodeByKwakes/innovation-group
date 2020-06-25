@@ -1,12 +1,16 @@
 <section class="container">
+  <div class="flex pad-gap-lr flex-end">
+    <p (click)="sortByKey('price')">Sort by Price</p>
+    <p class="push-left"
+       (click)="sortByKey('label')">Sort A-Z</p>
+  </div>
   <div class="grid-row">
     <article *ngFor="let product of products$ | async"
              class="grid-item">
       <innovation-group-product-card [product]="product"
-                                     (priceChange)="onAddToBasket($event)">
+                                     (priceChange)="onAddToBasket($event)"
+                                     (productSelected)="onSelectedProduct($event)">
       </innovation-group-product-card>
     </article>
   </div>
-
-  <!-- <p>{{basketTotal$ | async | currency:'GBP'}}</p> -->
 </section>
