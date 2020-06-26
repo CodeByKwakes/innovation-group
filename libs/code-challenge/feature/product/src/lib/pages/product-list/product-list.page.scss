@@ -1,7 +1,13 @@
+$color-purple: rgb(177, 11, 243);
+
 .flex-end {
   justify-content: flex-end;
 }
 
 .push-left {
   margin-left: 16px;
+}
+
+.selectedKey {
+  color: $color-purple;
 }

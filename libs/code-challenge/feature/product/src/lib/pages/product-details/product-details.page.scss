@@ -1,4 +1,24 @@
+$color-purple: rgb(177, 11, 243);
+
 a {
   text-decoration: underline;
-  color: rgb(177, 11, 243);
+  color: $color-purple;
+}
+
+.product-label {
+  font-size: 32px;
+}
+
+.product-pic {
+  width: 192px;
+  margin: 0 auto;
+}
+
+.purple-font {
+  font-size: 24px;
+  color: $color-purple;
+}
+
+.margin-gap {
+  margin-left: 16px;
 }

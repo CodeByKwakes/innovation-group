@@ -11,7 +11,7 @@ export class ProductListPage implements OnInit {
   products$ = this._productSrv.getProducts();
 
   basketTotal$ = this._productSrv.basketAction$;
-
+  sortKey = 'price';
   constructor(private _productSrv: ApiService, private _router: Router) {}
 
   ngOnInit(): void {}
@@ -21,6 +21,7 @@ export class ProductListPage implements OnInit {
   }
 
   sortByKey(key: string) {
+    this.sortKey = key;
     this.products$ = this._productSrv.getProducts(key);
   }
 

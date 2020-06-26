@@ -6,14 +6,12 @@
   <article class="content">
     <h3 (click)="productSelected.emit(product.id)">{{product.label | titlecase}}
     </h3>
-    <p>{{product.description}}</p>
+    <p>{{product.title}}</p>
     <p class="price">{{product.price | currency: 'GBP'}}</p>
     <div class="flex">
-      <button class="cart margin-l-auto"
-              (click)="priceChange.emit(product.price)">
-        <img src="assets/shopping-basket.svg"
-             alt="shopping basket">
-      </button>
+      <span class="cart margin-l-auto"
+            (click)="priceChange.emit(product.price)">
+      </span>
     </div>
 
   </article>

@@ -72,10 +72,18 @@ img {
 
 .cart {
   width: 64px;
-  border: none;
+  height: 64px;
   background-color: transparent;
+  display: inline-block;
+  background-size: cover;
+  color: rgb(177, 11, 243);
+  background-image: url('^assets/shopping-basket.svg');
 }
 
 .margin-l-auto {
   margin-left: auto;
+}
+
+.align-items-end {
+  align-items: flex-end;
 }

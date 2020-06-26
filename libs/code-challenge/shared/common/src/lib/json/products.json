@@ -3,21 +3,24 @@
     "id": 1,
     "label": "orange",
     "src": "assets/orange.jpg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis lorem varius, consectetur dolor sit amet, ullamcorper augue. Aenean auctor volutpat turpis, vel ultricies dui interdum ac. Proin scelerisque varius ex sit amet consectetur. Suspendisse tortor libero, cursus quis metus in, feugiat condimentum mauris. Donec imperdiet vitae tellus nec ornare. Nulla facilisi. Donec vehicula ultrices scelerisque. Phasellus ullamcorper, lectus id sodales venenatis, leo augue sagittis ante, vitae maximus ipsum tellus a neque. Duis eu quam velit. Vivamus tempus, libero sed congue laoreet, nisl sem porta urna, id porta massa turpis ac diam. In tempus sem dui, quis elementum mi ultrices non. Vestibulum laoreet libero ac lorem lobortis, sit amet pharetra ante lacinia.",
     "price": 0.50
   },
   {
     "id": 2,
     "label": "apple",
     "src": "assets/apple.jpg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis lorem varius, consectetur dolor sit amet, ullamcorper augue. Aenean auctor volutpat turpis, vel ultricies dui interdum ac. Proin scelerisque varius ex sit amet consectetur. Suspendisse tortor libero, cursus quis metus in, feugiat condimentum mauris. Donec imperdiet vitae tellus nec ornare. Nulla facilisi. Donec vehicula ultrices scelerisque. Phasellus ullamcorper, lectus id sodales venenatis, leo augue sagittis ante, vitae maximus ipsum tellus a neque. Duis eu quam velit. Vivamus tempus, libero sed congue laoreet, nisl sem porta urna, id porta massa turpis ac diam. In tempus sem dui, quis elementum mi ultrices non. Vestibulum laoreet libero ac lorem lobortis, sit amet pharetra ante lacinia.",
     "price": 0.75
   },
   {
     "id": 3,
     "label": "banana",
     "src": "assets/banana.jpg",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis lorem varius, consectetur dolor sit amet, ullamcorper augue. Aenean auctor volutpat turpis, vel ultricies dui interdum ac. Proin scelerisque varius ex sit amet consectetur. Suspendisse tortor libero, cursus quis metus in, feugiat condimentum mauris. Donec imperdiet vitae tellus nec ornare. Nulla facilisi. Donec vehicula ultrices scelerisque. Phasellus ullamcorper, lectus id sodales venenatis, leo augue sagittis ante, vitae maximus ipsum tellus a neque. Duis eu quam velit. Vivamus tempus, libero sed congue laoreet, nisl sem porta urna, id porta massa turpis ac diam. In tempus sem dui, quis elementum mi ultrices non. Vestibulum laoreet libero ac lorem lobortis, sit amet pharetra ante lacinia.",
     "price": 1.05
   }
 ]
